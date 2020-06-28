@@ -1,0 +1,29 @@
+#include<stdio.h>
+ 
+int main()
+{
+ 	int mSize, i, j;
+	int a[5]={1,2,3,4,5}, b[5]={6,7,8,9,10}, Merged[20];
+  
+ 	
+  	
+  	for(i = 0; i < 5; i++)
+  	{
+      	Merged[i] = a[i];
+  	}
+  	
+	mSize = 10;
+ 
+ 	for(i = 0, j = 5; j < mSize && i < 5; i++, j++)
+  	{
+  		Merged[j] = b[i];
+  	}
+ 
+ 	printf("\n a[%d] Array Elements After Merging \n", mSize); 
+ 	for(i = 0; i < mSize; i++)
+  	{
+    	printf(" %d \t ",Merged[i]);
+  	}
+ 
+  	return 0;
+}
